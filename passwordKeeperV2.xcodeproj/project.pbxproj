@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4259613523BFA9A000C35B1B /* newUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259613423BFA9A000C35B1B /* newUserVC.swift */; };
+		4259613723BFAA3400C35B1B /* loggedInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259613623BFAA3400C35B1B /* loggedInVC.swift */; };
+		4259613923BFAA7E00C35B1B /* newEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259613823BFAA7E00C35B1B /* newEntryVC.swift */; };
 		42D10CBD23BE518200F38925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D10CBC23BE518200F38925 /* AppDelegate.swift */; };
 		42D10CBF23BE518200F38925 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D10CBE23BE518200F38925 /* SceneDelegate.swift */; };
 		42D10CC123BE518200F38925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D10CC023BE518200F38925 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		081ADA09E702C657A55868C2 /* Pods-passwordKeeperV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passwordKeeperV2.debug.xcconfig"; path = "Target Support Files/Pods-passwordKeeperV2/Pods-passwordKeeperV2.debug.xcconfig"; sourceTree = "<group>"; };
 		2898CFAC29CD9D794CC4EF75 /* Pods-passwordKeeperV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passwordKeeperV2.release.xcconfig"; path = "Target Support Files/Pods-passwordKeeperV2/Pods-passwordKeeperV2.release.xcconfig"; sourceTree = "<group>"; };
+		4259613423BFA9A000C35B1B /* newUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newUserVC.swift; sourceTree = "<group>"; };
+		4259613623BFAA3400C35B1B /* loggedInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loggedInVC.swift; sourceTree = "<group>"; };
+		4259613823BFAA7E00C35B1B /* newEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newEntryVC.swift; sourceTree = "<group>"; };
 		42D10CB923BE518200F38925 /* passwordKeeperV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passwordKeeperV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D10CBC23BE518200F38925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42D10CBE23BE518200F38925 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				42D10CBE23BE518200F38925 /* SceneDelegate.swift */,
 				42D10CC023BE518200F38925 /* ViewController.swift */,
 				42D10CC223BE518200F38925 /* Main.storyboard */,
+				4259613823BFAA7E00C35B1B /* newEntryVC.swift */,
+				4259613623BFAA3400C35B1B /* loggedInVC.swift */,
+				4259613423BFA9A000C35B1B /* newUserVC.swift */,
 				42D10CD023BE52A600F38925 /* GoogleService-Info.plist */,
 				42D10CC523BE518400F38925 /* Assets.xcassets */,
 				42D10CC723BE518400F38925 /* LaunchScreen.storyboard */,
@@ -83,7 +92,6 @@
 				081ADA09E702C657A55868C2 /* Pods-passwordKeeperV2.debug.xcconfig */,
 				2898CFAC29CD9D794CC4EF75 /* Pods-passwordKeeperV2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,8 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4259613523BFA9A000C35B1B /* newUserVC.swift in Sources */,
 				42D10CC123BE518200F38925 /* ViewController.swift in Sources */,
 				42D10CBD23BE518200F38925 /* AppDelegate.swift in Sources */,
+				4259613723BFAA3400C35B1B /* loggedInVC.swift in Sources */,
+				4259613923BFAA7E00C35B1B /* newEntryVC.swift in Sources */,
 				42D10CBF23BE518200F38925 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

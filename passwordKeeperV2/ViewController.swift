@@ -16,10 +16,9 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         FirebaseApp.configure()
-
-
+        
     }
 
-
+    
 }
 
