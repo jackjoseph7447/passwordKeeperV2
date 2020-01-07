@@ -73,17 +73,25 @@
 			children = (
 				42D10CBC23BE518200F38925 /* AppDelegate.swift */,
 				42D10CBE23BE518200F38925 /* SceneDelegate.swift */,
-				42D10CC023BE518200F38925 /* ViewController.swift */,
+				42D6565923C39B4400E5A794 /* View Controllers */,
 				42D10CC223BE518200F38925 /* Main.storyboard */,
-				4259613823BFAA7E00C35B1B /* newEntryVC.swift */,
-				4259613623BFAA3400C35B1B /* loggedInVC.swift */,
-				4259613423BFA9A000C35B1B /* newUserVC.swift */,
 				42D10CD023BE52A600F38925 /* GoogleService-Info.plist */,
 				42D10CC523BE518400F38925 /* Assets.xcassets */,
 				42D10CC723BE518400F38925 /* LaunchScreen.storyboard */,
 				42D10CCA23BE518400F38925 /* Info.plist */,
 			);
 			path = passwordKeeperV2;
+			sourceTree = "<group>";
+		};
+		42D6565923C39B4400E5A794 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42D10CC023BE518200F38925 /* ViewController.swift */,
+				4259613823BFAA7E00C35B1B /* newEntryVC.swift */,
+				4259613623BFAA3400C35B1B /* loggedInVC.swift */,
+				4259613423BFA9A000C35B1B /* newUserVC.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		E74BF7AB124EC3B7F1331080 /* Pods */ = {
