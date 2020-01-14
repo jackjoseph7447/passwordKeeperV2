@@ -14,11 +14,14 @@ class ViewController: UIViewController
      var handle = Auth.auth().addStateDidChangeListener { (auth, user) in
       // ...
     }
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        FirebaseApp.configure()
-        
+//        FirebaseApp.configure()
+        Auth.auth().removeStateDidChangeListener(handle)
+
         
     }
 

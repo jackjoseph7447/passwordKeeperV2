@@ -9,5 +9,7 @@ target 'passwordKeeperV2' do
 pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'FirebaseUI'
+
 
 end

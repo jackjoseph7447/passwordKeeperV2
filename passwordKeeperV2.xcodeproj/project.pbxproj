@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421C016D23C63D1B0072AB2D /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C016C23C63D190072AB2D /* loginVC.swift */; };
 		4259613523BFA9A000C35B1B /* newUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259613423BFA9A000C35B1B /* newUserVC.swift */; };
 		4259613723BFAA3400C35B1B /* loggedInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259613623BFAA3400C35B1B /* loggedInVC.swift */; };
 		4259613923BFAA7E00C35B1B /* newEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259613823BFAA7E00C35B1B /* newEntryVC.swift */; };
+		42A073AA23CE31E500113269 /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A073A923CE31E500113269 /* customCell.swift */; };
 		42D10CBD23BE518200F38925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D10CBC23BE518200F38925 /* AppDelegate.swift */; };
 		42D10CBF23BE518200F38925 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D10CBE23BE518200F38925 /* SceneDelegate.swift */; };
 		42D10CC123BE518200F38925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D10CC023BE518200F38925 /* ViewController.swift */; };
@@ -23,9 +25,11 @@
 /* Begin PBXFileReference section */
 		081ADA09E702C657A55868C2 /* Pods-passwordKeeperV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passwordKeeperV2.debug.xcconfig"; path = "Target Support Files/Pods-passwordKeeperV2/Pods-passwordKeeperV2.debug.xcconfig"; sourceTree = "<group>"; };
 		2898CFAC29CD9D794CC4EF75 /* Pods-passwordKeeperV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passwordKeeperV2.release.xcconfig"; path = "Target Support Files/Pods-passwordKeeperV2/Pods-passwordKeeperV2.release.xcconfig"; sourceTree = "<group>"; };
+		421C016C23C63D190072AB2D /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		4259613423BFA9A000C35B1B /* newUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newUserVC.swift; sourceTree = "<group>"; };
 		4259613623BFAA3400C35B1B /* loggedInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loggedInVC.swift; sourceTree = "<group>"; };
 		4259613823BFAA7E00C35B1B /* newEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newEntryVC.swift; sourceTree = "<group>"; };
+		42A073A923CE31E500113269 /* customCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
 		42D10CB923BE518200F38925 /* passwordKeeperV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passwordKeeperV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D10CBC23BE518200F38925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42D10CBE23BE518200F38925 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 		42D10CB023BE518200F38925 = {
 			isa = PBXGroup;
 			children = (
+				42A073A923CE31E500113269 /* customCell.swift */,
 				42D10CBB23BE518200F38925 /* passwordKeeperV2 */,
 				42D10CBA23BE518200F38925 /* Products */,
 				E74BF7AB124EC3B7F1331080 /* Pods */,
@@ -90,6 +95,7 @@
 				4259613823BFAA7E00C35B1B /* newEntryVC.swift */,
 				4259613623BFAA3400C35B1B /* loggedInVC.swift */,
 				4259613423BFA9A000C35B1B /* newUserVC.swift */,
+				421C016C23C63D190072AB2D /* loginVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 				42D10CB623BE518200F38925 /* Frameworks */,
 				42D10CB723BE518200F38925 /* Resources */,
 				FAC7ABC6DAC9363680A8A894 /* [CP] Embed Pods Frameworks */,
+				685BB5129A20BBE0F1202059 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +188,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		685BB5129A20BBE0F1202059 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-passwordKeeperV2/Pods-passwordKeeperV2-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-passwordKeeperV2/Pods-passwordKeeperV2-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-passwordKeeperV2/Pods-passwordKeeperV2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DA5E23750C7D61428E0ADFE0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,8 +254,10 @@
 				4259613523BFA9A000C35B1B /* newUserVC.swift in Sources */,
 				42D10CC123BE518200F38925 /* ViewController.swift in Sources */,
 				42D10CBD23BE518200F38925 /* AppDelegate.swift in Sources */,
+				421C016D23C63D1B0072AB2D /* loginVC.swift in Sources */,
 				4259613723BFAA3400C35B1B /* loggedInVC.swift in Sources */,
 				4259613923BFAA7E00C35B1B /* newEntryVC.swift in Sources */,
+				42A073AA23CE31E500113269 /* customCell.swift in Sources */,
 				42D10CBF23BE518200F38925 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
