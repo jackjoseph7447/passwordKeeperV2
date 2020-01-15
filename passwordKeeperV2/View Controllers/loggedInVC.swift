@@ -12,20 +12,22 @@ import Firebase
 class loggedInVC: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     
+    @IBOutlet weak var myTableView: UITableView!
     
 
     
     
     @IBAction func logOutButton(_ sender: Any)
     {
-        
+        myTableView.dataSource = self
+        myTableView.delegate = self
 
         logOutAlert()
     }
     
     @IBAction func addButton(_ sender: Any)
     {
-        self.performSegue(withIdentifier: "addPW", sender: self)
+        self.performSegue(withIdentifier: "newPW", sender: self)
     }
     
     
@@ -36,11 +38,13 @@ class loggedInVC: UIViewController, UITableViewDelegate, UITableViewDataSource
 
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! CustomCell
         cell.passInfo.text = "123456"
         cell.websiteInfo.text = "Google"

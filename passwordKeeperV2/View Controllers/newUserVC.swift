@@ -31,6 +31,9 @@ class newUserVC: UIViewController
             }
             else{
                 print(authResult)
+                self.performSegue(withIdentifier: "newUserCreated", sender: self)
+                self.emailTF.text = ""
+                self.pwTF.text = ""
             }
           // ...
         }
