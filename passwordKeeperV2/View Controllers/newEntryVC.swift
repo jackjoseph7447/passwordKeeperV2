@@ -18,7 +18,19 @@ class newEntryVC: UIViewController
     
     @IBAction func newInfoButton(_ sender: Any)
     {
-    
+        
+        let username = userInfo.text!
+        let password = passInfo.text!
+        let site = siteInfo.text!
+        
+        let values :[String: String] = ["username": username, "password": password, "site": site]
+        
+        let ref = Database.database().reference(withPath: site)
+        
+        ref.setValue(values)
+        
+        self.navigationController?.popViewController(animated: true)
+
 
     }
     
@@ -32,6 +44,11 @@ class newEntryVC: UIViewController
     {
         super.viewDidLoad()
 
+        let rootRef = Database.database().reference()
+        let childRef = Database.database().reference(withPath: "grocery-items")
+        let itemsRef = rootRef.child("grocery-items")
+        let milkRef = itemsRef.child("milk")
+       
 
     }
     

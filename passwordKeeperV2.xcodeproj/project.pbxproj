@@ -57,7 +57,6 @@
 		42D10CB023BE518200F38925 = {
 			isa = PBXGroup;
 			children = (
-				42A073A923CE31E500113269 /* customCell.swift */,
 				42D10CBB23BE518200F38925 /* passwordKeeperV2 */,
 				42D10CBA23BE518200F38925 /* Products */,
 				E74BF7AB124EC3B7F1331080 /* Pods */,
@@ -96,6 +95,7 @@
 				4259613623BFAA3400C35B1B /* loggedInVC.swift */,
 				4259613423BFA9A000C35B1B /* newUserVC.swift */,
 				421C016C23C63D190072AB2D /* loginVC.swift */,
+				42A073A923CE31E500113269 /* customCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

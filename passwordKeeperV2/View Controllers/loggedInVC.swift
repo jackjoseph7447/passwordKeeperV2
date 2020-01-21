@@ -15,12 +15,16 @@ class loggedInVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     @IBOutlet weak var myTableView: UITableView!
     
 
-    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        myTableView.dataSource = self
+        myTableView.delegate = self
+    }
     
     @IBAction func logOutButton(_ sender: Any)
     {
-        myTableView.dataSource = self
-        myTableView.delegate = self
+
 
         logOutAlert()
     }
@@ -32,15 +36,11 @@ class loggedInVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     
     
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-
-    }
     
+    // MARK: TableviewMethods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        1
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -49,6 +49,9 @@ class loggedInVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         cell.passInfo.text = "123456"
         cell.websiteInfo.text = "Google"
         cell.userInfo.text = "test@gmail.com"
+        
+        
+        
         return cell
     }
     
